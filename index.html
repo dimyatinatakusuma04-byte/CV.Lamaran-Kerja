@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Profesional | DIMYATI NATAKUSUMA</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { background-color: #f8f9fa; color: #333; }
+        .hero-section { background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); color: white; padding: 60px 0; border-radius: 0 0 20px 20px; }
+        .card { border: none; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 8px 15px rgba(0,0,0,0.1); }
+        .badge-skill { background-color: #e9ecef; color: #495057; font-weight: 500; padding: 8px 14px; border-radius: 20px; margin: 4px; display: inline-block; }
+        .badge-skill i { color: #2c5364; margin-right: 5px; }
+        .timeline-item { border-left: 3px solid #2c5364; padding-left: 20px; position: relative; padding-bottom: 20px; }
+        .timeline-item::before { content: ''; position: absolute; width: 12px; height: 12px; background: #2c5364; border-radius: 50%; left: -8px; top: 5px; }
+        
+        /* Setingan biar pasfoto ga gepeng */
+        .profile-img { 
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    /* Trik pesulap: scale(1.3) untuk nge-zoom foto agar background merahnya memenuhi lingkaran */
+    transform: scale(1.3); 
+    border-radius: 50%; 
+    border: 4px solid white; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER / HERO SECTION -->
+    <div class="hero-section text-center mb-5">
+        <div class="container">
+            <!-- Panggil file foto bernama profil -->
+            <img src="cv.jpeg" class="img-thumbnail profile-img mb-3" alt="Dimyati Natakusuma">
+            <h1 class="fw-bold">DIMYATI NATAKUSUMA</h1>
+            <p class="lead fs-5">Sistem Komputer Student | Professional Operator</p>
+            <div class="mt-3">
+                <a href="mailto:dimyatinatakusuma04@gmail.com" class="text-white me-3 text-decoration-none"><i class="fas fa-envelope"></i> dimyatinatakusuma04@gmail.com</a>
+                <a href="https://wa.me/6287776616917" target="_blank" class="text-white me-3 text-decoration-none"><i class="fab fa-whatsapp"></i> 0877-7661-6917</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-5">
+        <div class="row g-4">
+            <!-- KOLOM KIRI -->
+            <div class="col-md-4">
+                <div class="card p-4 mb-4">
+                    <h5 class="fw-bold mb-3 text-primary"><i class="fas fa-address-card me-2"></i>Data Diri</h5>
+                    <p class="mb-2 small"><strong>Tanggal Lahir:</strong><br><span class="text-muted">04 Februari 2007</span></p>
+                    <p class="mb-0 small"><strong>Alamat:</strong><br><span class="text-muted">Kp. Nyompok Tengah, RT/RW 03/03, Desa Nyompok Kec. Kopo Kab. Serang Banten.</span></p>
+                </div>
+
+                <div class="card p-4 mb-4">
+                    <h5 class="fw-bold mb-3 text-primary"><i class="fas fa-user-tie me-2"></i>Tentang Saya</h5>
+                    <p class="text-muted mb-0" style="text-align: justify; font-size: 0.95rem;">
+                        Profesional yang disiplin, bertanggung jawab, dan memiliki kemampuan komunikasi serta kerja sama tim yang baik. Mampu bekerja secara efektif, cepat beradaptasi dengan lingkungan baru, serta memiliki semangat tinggi untuk terus berkembang dan memberikan hasil kerja terbaik. Saat ini sedang aktif menempuh kuliah S1 Sistem Komputer di Universitas Pamulang Kota Serang.
+                    </p>
+                </div>
+
+                <div class="card p-4 mb-4">
+                    <h5 class="fw-bold mb-3 text-primary"><i class="fas fa-tools me-2"></i>Keahlian</h5>
+                    <div class="mt-2">
+                        <span class="badge-skill"><i class="fas fa-comments"></i> Komunikasi</span>
+                        <span class="badge-skill"><i class="fas fa-search"></i> Teliti</span>
+                        <span class="badge-skill"><i class="fas fa-heart"></i> Jujur & Sopan</span>
+                        <span class="badge-skill"><i class="fas fa-clock"></i> Manajemen Waktu</span>
+                        <span class="badge-skill"><i class="fas fa-microchip"></i> Sistem Komputer</span>
+                        <span class="badge-skill"><i class="fab fa-linux"></i> Linux & Web Server</span>
+                    </div>
+                </div>
+
+                <div class="card p-4">
+                    <h5 class="fw-bold mb-3 text-primary"><i class="fas fa-star me-2"></i>Hobi & Minat</h5>
+                    <div class="mt-2">
+                        <span class="badge-skill"><i class="fas fa-book"></i> Membaca Buku</span>
+                        <span class="badge-skill"><i class="fas fa-plane"></i> Bepergian</span>
+                        <span class="badge-skill"><i class="fas fa-swimmer"></i> Berenang</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KOLOM KANAN -->
+            <div class="col-md-8">
+                <div class="card p-4 mb-4">
+                    <h5 class="fw-bold mb-4 text-primary"><i class="fas fa-briefcase me-2"></i>Pengalaman Kerja</h5>
+                    <div class="timeline-item">
+                        <h6 class="fw-bold mb-1">Operator Gudang</h6>
+                        <span class="text-muted d-block small mb-2">Gudang Shopee (SPX Express) | 01 Des 2025 - Apr 2026</span>
+                        <p class="text-muted small">Bertanggung jawab dalam manajemen keluar masuk barang, melakukan pengecekan kualitas produk (*quality control*), serta menjaga kerapian dan efisiensi penataan inventaris gudang.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h6 class="fw-bold mb-1">Operator Production</h6>
+                        <span class="text-muted d-block small mb-2">PT Hongrui Elektronika Jaya | 01 Mar 2025 - Okt 2025</span>
+                        <p class="text-muted small">Bekerja di lini perakitan komponen elektronika dengan target harian yang ketat, mengutamakan ketelitian tinggi, keselamatan kerja, serta koordinasi tim yang solid.</p>
+                    </div>
+                </div>
+
+                <div class="card p-4">
+                    <h5 class="fw-bold mb-4 text-primary"><i class="fas fa-graduation-cap me-2"></i>Riwayat Pendidikan</h5>
+                    <div class="timeline-item">
+                        <h6 class="fw-bold mb-1">S1 - Sistem Komputer</h6>
+                        <span class="text-muted d-block small mb-2">Universitas Pamulang Kota Serang | 2026 - Sekarang</span>
+                        <p class="text-muted small">Sedang menempuh pendidikan tinggi untuk mendalami arsitektur komputer, perangkat cerdas (*embedded system*), jaringan, serta administrasi server Linux.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h6 class="fw-bold mb-1">MA Darun'niam Inc.</h6>
+                        <span class="text-muted d-block small mb-2">Kelulusan | 2024 - 2025</span>
+                    </div>
+                    <div class="timeline-item">
+                        <h6 class="fw-bold mb-1">MTS Darussalam Inc.</h6>
+                        <span class="text-muted d-block small mb-2">Kelulusan | 2020 - 2021</span>
+                    </div>
+                    <div class="timeline-item">
+                        <h6 class="fw-bold mb-1">MI Darussalam Inc.</h6>
+                        <span class="text-muted d-block small mb-2">Kelulusan | 2017 - 2018</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="text-center text-muted py-4 small bg-white border-top">
+        &copy; 2026 Dimyati Natakusuma. Dibuat dengan <i class="fas fa-heart text-danger"></i> dan Bootstrap.
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
